@@ -5,7 +5,7 @@ import Map from '../components/Map'
 
 const Layout = () => {
   return (
-    <div className='flex-row h-screen w-screen bg-gray-100'>
+    <div className='flex-row bg-gray-100'>
       <header className='bg-gradient-to-b from-sky-400 to-sky-700 p-5'>
         <nav className='flex justify-between text-white'>
           <Link to="/">

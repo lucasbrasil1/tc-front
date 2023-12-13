@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PadraoDengue from './PadraoDengue';
+import PadraoChikungunya from './PadraoChikungunya';
 
 const Padroes = () => {
     const [selectedDisease, setSelectedDisease] = useState(0);
@@ -12,10 +13,10 @@ const Padroes = () => {
             </div>
             {!selectedDisease ?
                 <PadraoDengue />
-                : <p>
-                    Chikungunya
+                :
+                <PadraoChikungunya />
+                }
 
-                </p>}
         </div>
     )
 }

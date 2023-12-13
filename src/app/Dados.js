@@ -4,13 +4,14 @@ import { useSelector } from 'react-redux';
 import { selectSelectedCity } from '../features/map/mapSlice';
 import DadosDengue from './DadosDengue';
 import MapCityInfo from '../components/MapCityInfo';
+import DadosChikungunya from './DadosChikungunya';
 
 const Dados = () => {
     const [selectedDisease, setSelectedDisease] = useState(0);
 
     return (
         <div className='flex flex-col'>
-            <div className='flex'>
+            <div className='flex p-1'>
                 <Map />
                 <MapCityInfo />
             </div>
@@ -22,10 +23,9 @@ const Dados = () => {
                 <div className='flex w-full bg-gray-300 p-3'>
                     {!selectedDisease ?
                         <DadosDengue />
-                        : <p>
-                            Chikungunya
-
-                        </p>}
+                        : 
+                        <DadosChikungunya />
+                        }
                 </div>
             </div>
         </div>
